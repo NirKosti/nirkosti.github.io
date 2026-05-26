@@ -22,7 +22,7 @@ repository               : "NirKosti/nirkosti.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Nir Kosti"
   pronouns         :
   bio              : "Marie Skłodowska-Curie Postdoctoral Fellow at LMU Munich. I research the growth of regulation and its interplay with legislation."
