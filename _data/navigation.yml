@@ -16,9 +16,6 @@ main:
 
   - title: "SUPA"
     url: /supa/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
         
   - title: "Blog Posts"
     url: /year-archive/
