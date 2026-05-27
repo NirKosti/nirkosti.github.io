@@ -56,7 +56,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
   background: var(--bg);
   color: var(--text);
@@ -96,7 +96,7 @@ a.link:hover { border-bottom-color: var(--accent); }
 }
 .nav-brand {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.01em;
   position: relative;
@@ -111,7 +111,7 @@ a.link:hover { border-bottom-color: var(--accent); }
 .nav-links {
   display: flex;
   gap: 26px;
-  font-size: 13.5px;
+  font-size: 15px;
   color: var(--text-muted);
 }
 .nav-links a { transition: color 0.2s; }
@@ -159,23 +159,17 @@ a.link:hover { border-bottom-color: var(--accent); }
 
 .side-name {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 500;
   letter-spacing: -0.01em;
-  margin-bottom: 4px;
-}
-.side-tagline {
-  font-size: 12.5px;
-  color: var(--text-muted);
-  line-height: 1.55;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .side-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: 13px;
+  gap: 11px;
+  font-size: 14.5px;
 }
 .side-links a {
   color: var(--text);
@@ -195,28 +189,28 @@ a.link:hover { border-bottom-color: var(--accent); }
    MAIN
    ============================================ */
 .eyebrow {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .hero h1 {
   font-family: var(--font-serif);
-  font-size: 40px;
+  font-size: 46px;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 .hero h1 em {
   font-style: italic;
   color: var(--accent);
 }
 .hero .lede {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.75;
   color: var(--text-muted);
   max-width: 56ch;
@@ -235,12 +229,12 @@ section + section { margin-top: 44px; }
 }
 .section-head h2 {
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.005em;
 }
 .section-head .more {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-faint);
   transition: color 0.2s;
 }
@@ -249,18 +243,18 @@ section + section { margin-top: 44px; }
 /* News list */
 .news-item {
   display: grid;
-  grid-template-columns: 88px 1fr;
-  gap: 16px;
-  padding: 12px 0;
+  grid-template-columns: 100px 1fr;
+  gap: 18px;
+  padding: 14px 0;
   border-bottom: 0.5px solid var(--border);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .news-item:last-child { border-bottom: none; }
 .news-date {
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 .news-body { color: var(--text); }
 .news-body strong { font-weight: 500; }
@@ -297,18 +291,18 @@ section + section { margin-top: 44px; }
 }
 .project-name {
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
 }
 .project-meta {
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 0.08em;
   color: var(--accent);
   text-transform: uppercase;
 }
 .project.alt .project-meta { color: var(--accent-2); }
 .project-desc {
-  font-size: 13px;
+  font-size: 14.5px;
   line-height: 1.55;
   color: var(--text-muted);
 }
@@ -327,13 +321,13 @@ section + section { margin-top: 44px; }
 .pub:hover { border-left-color: var(--accent); }
 .pub-title {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 .pub-meta {
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--text-faint);
 }
 .pub-meta em { font-style: italic; color: var(--text-muted); }
@@ -343,9 +337,9 @@ section + section { margin-top: 44px; }
 footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 32px;
+  padding: 36px 32px;
   border-top: 0.5px solid var(--border);
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--text-faint);
   display: flex;
   justify-content: space-between;
@@ -364,7 +358,7 @@ footer {
   }
   .sidebar { position: static; }
   .avatar { width: 120px; height: 120px; }
-  .hero h1 { font-size: 30px; }
+  .hero h1 { font-size: 34px; }
   .projects { grid-template-columns: 1fr; }
   .news-item { grid-template-columns: 76px 1fr; gap: 12px; }
   footer { padding: 24px 20px; flex-direction: column; gap: 6px; }
@@ -385,6 +379,7 @@ footer {
       <a href="/supa/">SUPA</a>
       <a href="/teaching/">Teaching</a>
       <a href="/cv/">CV</a>
+      <a href="/news/">News</a>
     </div>
     <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="themeIcon">
@@ -410,7 +405,6 @@ footer {
       </svg>
     </div>
     <h2 class="side-name">Nir Kosti</h2>
-    <p class="side-tagline">Marie Skłodowska-Curie Postdoctoral Fellow at LMU Munich. I research the growth of regulation and its interplay with legislation.</p>
     <nav class="side-links">
       <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Munich, Germany</a>
       <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg>LMU Munich · Hebrew U.</a>
@@ -435,7 +429,7 @@ footer {
     <section>
       <div class="section-head">
         <h2>Recent news</h2>
-        <a href="#" class="more">See all &rarr;</a>
+        <a href="/news/" class="more">See all &rarr;</a>
       </div>
       <div class="news-item">
         <span class="news-date">May 2026</span>
