@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: clean
 title: "Sustaining Public Administration in Modern Democracies (SUPA)"
 permalink: /supa/
 author_profile: true
