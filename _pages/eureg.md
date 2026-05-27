@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: clean
 title: "Unveiling European Union Regulatory Design (EUREG)"
 permalink: /eureg/
 author_profile: true
