@@ -12,7 +12,7 @@ Spring 2021, Spring 2022, Autumn 2022
 
 ## Empirical Research in Politics (Bachelor)
 
-Reichman University - Teaching Assistant, Lab Sessions  
+Reichman University - Teaching Assistant, Lab Sessions
 Autumn 2021
 
 ## Research Methods (Bachelor)
@@ -27,6 +27,6 @@ Autumn 2015, Autumn 2016, Autumn 2017
 
 ## Comparative Methods (PhD)
 
-Essex Summer School - Teaching Assistant
+Essex Summer School in Social Science Data Analysis - Teaching Assistant
 Summer 2014
 
