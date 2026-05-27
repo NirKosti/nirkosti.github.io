@@ -27,6 +27,6 @@ Autumn 2015, Autumn 2016, Autumn 2017
 
 ## Comparative Methods (PhD)
 
-Essex Summer School in Social Science Data Analysis - Teaching Assistant
+Essex Summer School - Teaching Assistant, 
 Summer 2014
 
