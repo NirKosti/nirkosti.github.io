@@ -11,7 +11,7 @@ redirect_from:
 
 **2024–2027** - Marie Skłodowska-Curie Postdoctoral Fellow. Project: *EUREG – Unveiling European Union Regulatory Design* (EU Horizon Europe, 2021–2027). Chair of Empirical Theory and Research, Geschwister-Scholl-Institute of Political Science, LMU Munich (Host: Prof. Christoph Knill). Secondment: GOVTRUST Centre of Excellence, University of Antwerp (Host: Prof. Koen Verhoest).
 
-**2025–2027** - Package Leader and Consortium Member. Project: *SUPA – Sustaining Public Administration in Modern Democracies* (EU Horizon Europe, 2021–2027). Department of Political Science, Hebrew University of Jerusalem. Leader of *Work Package 3: Legal Design and Endogenous Rule Growth*.
+**2025–2028** - Package Leader and Consortium Member. Project: *SUPA – Sustaining Public Administration in Modern Democracies* (EU Horizon Europe, 2021–2027). Department of Political Science, Hebrew University of Jerusalem. Leader of *Work Package 3: Legal Design and Endogenous Rule Growth*.
 
 ## Education
 
