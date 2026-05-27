@@ -11,4 +11,4 @@ SUPA is structured around seven interlinked Work Packages, each addressing a key
 
 ## Work Package 3: Mechanisms of Endogenous Rule Growth
 
-I lead Work Package 3, which examines how specific legal design features drive endogenous rule growth. Drawing on original dataset of legislation collected in WP1, we assess legal complexity through linguistic and relational indicators and evaluates regulatory discretion. Legal acts are categorized into first-, second-, and third-order rules to trace cascading patterns of rule expansion.
+I lead Work Package 3, which examines how specific legal design features drive endogenous rule growth. Drawing on original dataset of legal acts collected in WP1, we assess legal complexity through linguistic and relational indicators and evaluates regulatory discretion. Legal acts are categorized into first-, second-, and third-order rules to trace cascading patterns of rule expansion.
