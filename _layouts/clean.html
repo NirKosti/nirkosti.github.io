@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page.title }} · Nir Kosti</title>
+<meta name="description" content="{{ page.description | default: site.description }}" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================
+   DESIGN TOKENS — keep in sync with index.html
+   ============================================ */
+:root {
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans:  'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --max-width: 880px;
+}
+[data-theme="dark"] {
+  --accent:      #5eead4;
+  --accent-2:    #c4b5fd;
+  --bg:          #14171c;
+  --surface:     #1c1f26;
+  --surface-2:   #232730;
+  --text:        #f1eee5;
+  --text-muted:  #a8a59b;
+  --text-faint:  #6b6e75;
+  --border:      rgba(255,255,255,0.08);
+  --border-hover:rgba(255,255,255,0.16);
+}
+[data-theme="light"] {
+  --accent:      #0f766e;
+  --accent-2:    #6d28d9;
+  --bg:          #faf8f3;
+  --surface:     #ffffff;
+  --surface-2:   #f4f1ea;
+  --text:        #1a1d24;
+  --text-muted:  #5a5d65;
+  --text-faint:  #8a8d94;
+  --border:      rgba(0,0,0,0.08);
+  --border-hover:rgba(0,0,0,0.16);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.7;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--accent); color: var(--bg); }
+
+/* NAV */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(140%) blur(12px);
+  border-bottom: 0.5px solid var(--border);
+}
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-brand {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  position: relative;
+}
+.nav-brand::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -6px;
+  height: 2px;
+  background: var(--accent);
+}
+.nav-links {
+  display: flex;
+  gap: 26px;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+.nav-links a { transition: color 0.2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.theme-toggle:hover { color: var(--accent); }
+
+/* LAYOUT */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 56px;
+}
+
+/* SIDEBAR */
+.sidebar { position: sticky; top: 90px; align-self: start; }
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--surface);
+  margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.side-name {
+  font-family: var(--font-serif);
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.side-links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-size: 14.5px;
+}
+.side-links a {
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+.side-links a:hover { color: var(--accent); }
+.side-links svg {
+  width: 14px; height: 14px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* PAGE HERO */
+.page-hero {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 0.5px solid var(--border);
+}
+.page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* MARKDOWN-RENDERED CONTENT */
+.content { color: var(--text); }
+.content h2 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 38px 0 14px;
+  letter-spacing: -0.005em;
+  color: var(--text);
+}
+.content h3 {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 500;
+  margin: 28px 0 10px;
+  color: var(--text);
+}
+.content h4 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 24px 0 8px;
+  color: var(--accent);
+}
+.content p {
+  margin-bottom: 16px;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+.content ul, .content ol {
+  margin: 0 0 18px 24px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.content li { margin-bottom: 6px; }
+.content li::marker { color: var(--accent); }
+.content strong {
+  color: var(--text);
+  font-weight: 500;
+}
+.content em { font-style: italic; }
+.content a {
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.content a:hover { border-bottom-color: var(--accent); }
+.content blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 16px;
+  margin: 20px 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+.content code {
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.content hr {
+  border: none;
+  border-top: 0.5px solid var(--border);
+  margin: 32px 0;
+}
+
+/* FOOTER */
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 36px 32px;
+  border-top: 0.5px solid var(--border);
+  font-size: 13.5px;
+  color: var(--text-faint);
+  display: flex;
+  justify-content: space-between;
+}
+footer a.link {
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+footer a.link:hover { border-bottom-color: var(--accent); }
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+  .nav-inner { padding: 14px 20px; }
+  .nav-links { gap: 16px; font-size: 13.5px; }
+  .container {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 60px;
+    gap: 36px;
+  }
+  .sidebar { position: static; }
+  .avatar { width: 120px; height: 120px; }
+  .page-hero h1 { font-size: 30px; }
+  footer { padding: 24px 20px; flex-direction: column; gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Nir Kosti</a>
+    <div class="nav-links">
+      <a href="/publications/">Publications</a>
+      <a href="/eureg/">EUREG</a>
+      <a href="/supa/">SUPA</a>
+      <a href="/teaching/">Teaching</a>
+      <a href="/cv/">CV</a>
+      <a href="/news/">News</a>
+    </div>
+    <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="themeIcon">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="avatar">
+      <!-- Replace this with: <img src="/assets/img/profile.jpg" alt="Nir Kosti"> -->
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+        <rect width="160" height="160" fill="var(--surface-2)"/>
+        <circle cx="80" cy="62" r="22" fill="var(--text-faint)" opacity="0.4"/>
+        <path d="M30 140 C 30 110 50 96 80 96 C 110 96 130 110 130 140 Z" fill="var(--text-faint)" opacity="0.4"/>
+      </svg>
+    </div>
+    <h2 class="side-name">Nir Kosti</h2>
+    <nav class="side-links">
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Munich, Germany</a>
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg>LMU Munich · Hebrew U.</a>
+      <a href="mailto:you@example.com"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</a>
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Google Scholar</a>
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>ORCID</a>
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>ResearchGate</a>
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+      <a href="#"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>LinkedIn</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <h1>{{ page.title }}</h1>
+    </section>
+
+    <section class="content">
+      {{ content }}
+    </section>
+  </main>
+</div>
+
+<footer>
+  <span>&copy; 2026 Nir Kosti</span>
+  <span>Built with care &middot; <a href="https://github.com/nirkosti/nirkosti.github.io" class="link">Source</a></span>
+</footer>
+
+<script>
+  const html = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const icon = document.getElementById('themeIcon');
+  const moonPath = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+  const sunPath = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+  function applyTheme(t) {
+    html.setAttribute('data-theme', t);
+    icon.innerHTML = t === 'dark' ? moonPath : sunPath;
+    localStorage.setItem('theme', t);
+  }
+  applyTheme(localStorage.getItem('theme') || 'dark');
+  toggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+</script>
+
+</body>
+</html>
