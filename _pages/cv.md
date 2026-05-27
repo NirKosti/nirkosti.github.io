@@ -41,7 +41,7 @@ redirect_from:
 
 ## Grants
 
-* **2025–2027** - EU Horizon Europe, *SUPA – Sustaining Public Administration in Modern Democracies* (work package leader, HUJI part €200,000).
+* **2025–2028** - EU Horizon Europe, *SUPA – Sustaining Public Administration in Modern Democracies* (work package leader, HUJI part €200,000).
 * **2020** - Heth Academic Center for Research of Competition and Regulation, Research Grant (with Yoav Mehozay).
 * **2020** - Aharon Barak Center for Interdisciplinary Legal Research, Hebrew University, Research Grant.
 * **2018** - Heth Academic Center for Research of Competition and Regulation, Research Grant (with David Levi-Faur).
