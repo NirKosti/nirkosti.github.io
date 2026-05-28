@@ -24,8 +24,8 @@ redirect_from:
 ## Prizes, Awards, and Honorable Mentions
 
 * **2024** - Jacob and Genia Horniker Prize. For an outstanding doctoral dissertation by the Hebrew University (equivalent to *summa cum laude*).
-* **2023** - Giandomenico Majone Prize. Best Paper Award, Biennial Conference of the ECPR Standing Group on Regulatory Governance (early career scholar).
-* **2022** - Rudolf Wildenmann Prize. Best Paper Award, ECPR Joint Sessions of Workshops (early career scholar).
+* **2023** - [Giandomenico Majone Prize](https://ecpr.eu/news/news/details/722). Best Paper Award, Biennial Conference of the ECPR Standing Group on Regulatory Governance (early career scholar).
+* **2022** - [Rudolf Wildenmann Prize](https://ecpr.eu/news/news/details/661). Best Paper Award, ECPR Joint Sessions of Workshops (early career scholar).
 * **2018** - Jonathan Fine Best M.A. Thesis Award. Honorable mention by the Israel Political Science Association.
 * **2018** - Jacques Nass Award for Outstanding Seminar Paper in Political Economy, Hebrew University of Jerusalem.
 
