@@ -511,7 +511,7 @@ footer {
   }
 
   // Init from localStorage or default to dark
-  applyTheme(localStorage.getItem('theme') || 'dark');
+  applyTheme(localStorage.getItem('theme') || 'light');
 
   toggle.addEventListener('click', () => {
     const current = html.getAttribute('data-theme');
