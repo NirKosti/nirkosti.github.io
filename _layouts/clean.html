@@ -286,12 +286,12 @@ footer a.link:hover { border-bottom-color: var(--accent); }
   <div class="nav-inner">
     <a href="/" class="nav-brand">Nir Kosti</a>
     <div class="nav-links">
-      <a href="/publications/">Publications</a>
-      <a href="/eureg/">EUREG</a>
-      <a href="/supa/">SUPA</a>
-      <a href="/teaching/">Teaching</a>
-      <a href="/cv/">CV</a>
-      <a href="/news/">News</a>
+     <a href="/publications/" class="{% if page.url == '/publications/' %}active{% endif %}">Publications</a>
+     <a href="/eureg/" class="{% if page.url == '/eureg/' %}active{% endif %}">EUREG</a>
+     <a href="/supa/" class="{% if page.url == '/supa/' %}active{% endif %}">SUPA</a>
+     <a href="/teaching/" class="{% if page.url == '/teaching/' %}active{% endif %}">Teaching</a>
+     <a href="/cv/" class="{% if page.url == '/cv/' %}active{% endif %}">CV</a>
+     <a href="/news/" class="{% if page.url == '/news/' %}active{% endif %}">News</a>
     </div>
     <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="themeIcon">
