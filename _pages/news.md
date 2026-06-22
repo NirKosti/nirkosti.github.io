@@ -6,7 +6,7 @@ permalink: /news/
 
 ### 2026
 
-**June 2026** - Presenting at the [European Political Science Society conference](https://epssnet.org/belfast-2026/), co-chairing and discussing panels on regulatory growth.
+**June 2026** - Presenting at the [European Political Science Society conference](https://epssnet.org/belfast-2026/) in Belfast, Northern Ireland; co-chairing and discussing panels on regulatory growth.
 
 **May 2026** - SUPA consortium meeting in Oslo, Norway.
 
