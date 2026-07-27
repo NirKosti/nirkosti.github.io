@@ -11,6 +11,8 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 Alon Barkat, S., Gilad, S., Kosti, N., & Shpaizman, I. (2025). Career Civil Servants' Socially Embedded Responses to Democratic Backsliding. *Perspectives on Politics*. [https://doi.org/10.1017/S153759272500074X](https://doi.org/10.1017/S153759272500074X)
 
+Kosti, N. (2025). Regulatory Discretion: An Analytical and Comparative Perspective. *Politika*, 346–373. [https://politika.huji.ac.il/regulatory-discretion](https://politika.huji.ac.il/%D7%A9%D7%99%D7%A7%D7%95%D7%9C-%D7%94%D7%93%D7%A2%D7%AA-%D7%94%D7%A8%D7%92%D7%95%D7%9C%D7%98%D7%95%D7%A8%D7%99-%D7%9E%D7%91%D7%98-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99-%D7%95%D7%9E%D7%A9%D7%95%D7%95%D7%94?ref_tid=18574)
+
 Kosti, N. (2024). Styles of Regulatory Discretion: A Comparison of the British and Israeli Education Legislation. *Public Administration*, 102(2), 444–460. [https://doi.org/10.1111/padm.12929](https://doi.org/10.1111/padm.12929)
 
 Kosti, N. (2024). Conceptualization and Measuring Regulatory Discretion: Text Analysis of 120 Years of British Legislation. *Regulation & Governance*, 18(3), 761–779. [https://doi.org/10.1111/rego.12516](https://doi.org/10.1111/rego.12516)
