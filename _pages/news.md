@@ -5,6 +5,7 @@ permalink: /news/
 ---
 
 ### 2026
+**July 2026** - Presenting at the [ECPR Standing Group on the European Union (SGEU) conference](https://ecpr.eu/Events/341) in Catania, co-chairing and discussing panels on regulatory growth and simplification.
 
 **June 2026** - Presenting at the [European Political Science Society conference](https://epssnet.org/belfast-2026/) in Belfast, Northern Ireland; co-chairing and discussing panels on regulatory growth.
 
