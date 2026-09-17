@@ -5,6 +5,8 @@ permalink: /news/
 ---
 
 ### 2026
+**September 2026** - Call for papers for a panel I'm co-chairing on *Rule Growth: Measuring, Explaining, and Governing Regulatory Expansion* at DVPW 2027. [Submit an abstract](https://lnkd.in/dsuSqiEt) by 31 October 2026.
+
 **July 2026** - Presenting at the [ECPR Standing Group on the European Union (SGEU) conference](https://ecpr.eu/Events/341) in Catania, Italy; co-chairing and discussing panels on regulatory growth and simplification.
 
 **June 2026** - Presenting at the [European Political Science Society conference](https://epssnet.org/belfast-2026/) in Belfast, Northern Ireland; co-chairing and discussing panels on regulatory growth.
