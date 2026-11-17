@@ -5,6 +5,8 @@ permalink: /news/
 ---
 
 ### 2026
+**November 2026** - New article with David Levi-Faur accepted in *Governance*: The Politics of Discretion and the Role of Judicial Review in Democratic Governance.
+
 **October 2026** - Organising ["The Simplified State?"](https://ecpr.eu/Events/Event/WorkshopDetails/18071), a workshop with Yves Steinebach at the ECPR Joint Sessions in Trieste, 1–4 June 2027. Call for papers open — deadline 14 December 2026.
 
 **September 2026** - Call for papers for a panel I'm co-chairing on *Rule Growth: Measuring, Explaining, and Governing Regulatory Expansion* at DVPW 2027. [Submit an abstract](https://meine.dvpw.de/einreichungen/) by 31 October 2026.
