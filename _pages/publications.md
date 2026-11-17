@@ -8,6 +8,7 @@ author_profile: true
 You can also find my articles on my [Google Scholar profile](https://scholar.google.com/citations?user=Bu3qKaQAAAAJ&hl).
 
 ## Journal Articles
+Kosti, N., & Levi-Faur, D. (forthcoming). The Politics of Discretion and the Role of Judicial Review in Democratic Governance. *Governance*. 
 
 Alon Barkat, S., Gilad, S., Kosti, N., & Shpaizman, I. (2025). Career Civil Servants' Socially Embedded Responses to Democratic Backsliding. *Perspectives on Politics*. [https://doi.org/10.1017/S153759272500074X](https://doi.org/10.1017/S153759272500074X)
 
