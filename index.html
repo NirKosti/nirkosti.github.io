@@ -295,31 +295,31 @@ section + section { margin-top: 44px; }
   color: var(--text-faint);
 }
 
-/* Publications */
-.pub-list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+/* Publications: plain rows, same rhythm as news and projects */
 .pub {
-  padding-left: 14px;
-  border-left: 0.5px solid var(--border);
-  transition: border-color 0.2s;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--border);
+  font-size: 16px;
+  line-height: 1.6;
 }
-.pub:hover { border-left-color: var(--accent); }
-.pub-title {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.4;
-  margin-bottom: 5px;
+.pub:last-child { border-bottom: none; }
+.pub-year {
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  font-size: 14.5px;
 }
+.pub-title { font-weight: 500; transition: color 0.2s; }
+.pub-title:hover { color: var(--accent); }
 .pub-meta {
-  font-size: 14px;
+  display: block;
+  font-size: 14.5px;
   color: var(--text-faint);
 }
 .pub-meta em { font-style: italic; color: var(--text-muted); }
-.pub-meta strong { font-weight: 500; color: var(--text); }
+.pub-meta strong { font-weight: 500; color: var(--text-muted); }
 
 /* Footer */
 footer {
@@ -348,6 +348,7 @@ footer {
   .avatar { width: 120px; height: 120px; }
   .hero h1 { font-size: 34px; }
   .projects { grid-template-columns: 1fr; }
+   .pub { grid-template-columns: 76px 1fr; gap: 12px; }
   .news-item { grid-template-columns: 76px 1fr; gap: 12px; }
   footer { padding: 24px 20px; flex-direction: column; gap: 6px; }
 }
@@ -447,14 +448,20 @@ footer {
         <h2>Selected publications</h2>
         <a href="/publications/" class="more">All publications &rarr;</a>
       </div>
-      <div class="pub-list">
-         <div class="pub">
-          <p class="pub-title"><a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/career-civil-servants-socially-embedded-responses-to-democratic-backsliding/CA9DA749871C535E87074D9F43B7CEFC">Career Civil Servants' Socially Embedded Responses to Democratic Backsliding</a></p>
-          <p class="pub-meta">Alon Barkat, S., Gilad, S., <strong>Kosti, N.</strong> &amp; Shpaizman, I. <em>Perspectives on Politics</em>, 2025</p>
+          <div class="pub-list">
+        <div class="pub">
+          <span class="pub-year">2025</span>
+          <span class="pub-body">
+            <a class="pub-title" href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/career-civil-servants-socially-embedded-responses-to-democratic-backsliding/CA9DA749871C535E87074D9F43B7CEFC">Career Civil Servants' Socially Embedded Responses to Democratic Backsliding</a>
+            <span class="pub-meta">Alon Barkat, S., Gilad, S., <strong>Kosti, N.</strong> &amp; Shpaizman, I. &middot; <em>Perspectives on Politics</em></span>
+          </span>
         </div>
         <div class="pub">
-          <p class="pub-title"><a href="https://politika.huji.ac.il/%D7%A9%D7%99%D7%A7%D7%95%D7%9C-%D7%94%D7%93%D7%A2%D7%AA-%D7%94%D7%A8%D7%92%D7%95%D7%9C%D7%98%D7%95%D7%A8%D7%99-%D7%9E%D7%91%D7%98-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99-%D7%95%D7%9E%D7%A9%D7%95%D7%95%D7%94?ref_tid=18574">Regulatory Discretion: An Analytical and Comparative Perspective</a></p>
-          <p class="pub-meta"><strong>Kosti, N.</strong> &middot; <em>Politika</em>, 2025 (Hebrew)</p>
+          <span class="pub-year">2025</span>
+          <span class="pub-body">
+            <a class="pub-title" href="https://politika.huji.ac.il/%D7%A9%D7%99%D7%A7%D7%95%D7%9C-%D7%94%D7%93%D7%A2%D7%AA-%D7%94%D7%A8%D7%92%D7%95%D7%9C%D7%98%D7%95%D7%A8%D7%99-%D7%9E%D7%91%D7%98-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99-%D7%95%D7%9E%D7%A9%D7%95%D7%95%D7%94?ref_tid=18574">Regulatory Discretion: An Analytical and Comparative Perspective</a>
+            <span class="pub-meta"><strong>Kosti, N.</strong> &middot; <em>Politika</em> (Hebrew)</span>
+          </span>
         </div>
       </div>
     </section>
