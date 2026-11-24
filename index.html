@@ -214,11 +214,11 @@ a.link:hover { border-bottom-color: var(--accent); }
 
 .hero h1 {
   font-family: var(--font-serif);
-  font-size: 46px;
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
 }
 .hero h1 em {
   font-style: italic;
@@ -274,52 +274,23 @@ section + section { margin-top: 44px; }
 .news-body { color: var(--text); }
 .news-body strong { font-weight: 500; }
 
-/* Project cards */
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
+/* Projects: plain rows, same rhythm as the news list */
 .project {
-  background: var(--surface);
-  border: 0.5px solid var(--border);
-  border-radius: 10px;
-  padding: 18px 20px;
-  position: relative;
-  transition: border-color 0.2s, transform 0.2s;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--border);
+  font-size: 16px;
+  line-height: 1.6;
 }
-.project:hover { border-color: var(--border-hover); transform: translateY(-2px); }
-.project::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 14px; bottom: 14px;
-  width: 2px;
-  background: var(--accent);
-  border-radius: 0 2px 2px 0;
-}
-.project.alt::before { background: var(--accent-2); }
-.project-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 6px;
-}
-.project-name {
-  font-family: var(--font-serif);
-  font-size: 19px;
-  font-weight: 500;
-}
+.project:last-child { border-bottom: none; }
+.project-name { font-weight: 500; }
+.project:hover .project-name { color: var(--accent); }
 .project-meta {
-  font-size: 11.5px;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  text-transform: uppercase;
-}
-.project.alt .project-meta { color: var(--accent-2); }
-.project-desc {
+  display: block;
   font-size: 14.5px;
-  line-height: 1.55;
-  color: var(--text-muted);
+  color: var(--text-faint);
 }
 
 /* Publications */
@@ -454,20 +425,18 @@ footer {
       <div class="section-head">
         <h2>Current projects</h2>
       </div>
-      <div class="projects">
+     <div class="projects">
         <a href="/eureg/" class="project">
-          <div class="project-head">
-            <span class="project-name">EUREG</span>
-            <span class="project-meta">MSCA · LMU</span>
-          </div>
-          <p class="project-desc">Variation in regulatory design across EU policy domains. Principal investigator.</p>
+          <span class="project-name">EUREG</span>
+          <span class="project-body">Variation in regulatory design across EU policy domains. Principal investigator.
+            <span class="project-meta">Marie Skłodowska-Curie Actions, LMU Munich</span>
+          </span>
         </a>
-        <a href="/supa/" class="project alt">
-          <div class="project-head">
-            <span class="project-name">SUPA</span>
-            <span class="project-meta">EU Horizon · WP3 · HUJI</span>
-          </div>
-          <p class="project-desc">How discretion and complexity shape rule growth. WP leader.</p>
+        <a href="/supa/" class="project">
+          <span class="project-name">SUPA</span>
+          <span class="project-body">How discretion and complexity shape rule growth. Work Package 3 leader.
+            <span class="project-meta">EU Horizon, Hebrew University of Jerusalem</span>
+          </span>
         </a>
       </div>
     </section>
