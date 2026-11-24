@@ -25,4 +25,4 @@ description: "ניר קוסטי — חוקר במדע המדינה ובמדינ�
 
 ## יצירת קשר
 
-[nir.kosti@lmu.de](mailto:nir.kosti@lmu.de)  [רשימת פרסומים מלאה](/publications/)  [קורות חיים](/cv/)
+[nir.kosti@lmu.de](mailto:nir.kosti@lmu.de)         [רשימת פרסומים מלאה](/publications/)         [קורות חיים](/cv/)
